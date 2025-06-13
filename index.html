@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Center</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png" />
+</head>
+<body>
+  <header>
+    <h1>City Center Mall</h1>
+  </header>
+  <main>
+    <p>Welcome to City Center – your shopping destination!</p>
+  </main>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("Service Worker registered"))
+        .catch(err => console.error("Service Worker failed", err));
+    }
+  </script>
+</body>
+</html>
