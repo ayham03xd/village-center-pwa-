@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City Center</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="icon-192.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>City Center Mall</title>
 </head>
 <body>
   <header>
     <h1>City Center Mall</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Stores</a>
+      <a href="#">Offers</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
   <main>
-    <p>Welcome to City Center – your shopping destination!</p>
+    <section class="hero">
+      <h2>Welcome to City Center</h2>
+      <p>Your ultimate shopping destination!</p>
+    </section>
+    <section class="offers">
+      <h3>Today's Offers</h3>
+      <ul>
+        <li>50% off at Zara</li>
+        <li>Buy 1 Get 1 at Starbucks</li>
+      </ul>
+    </section>
   </main>
+  <footer>
+    <p>&copy; 2025 City Center. All rights reserved.</p>
+  </footer>
   <script src="app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log("Service Worker registered"))
-        .catch(err => console.error("Service Worker failed", err));
-    }
-  </script>
 </body>
 </html>
